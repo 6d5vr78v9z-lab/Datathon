@@ -1,82 +1,49 @@
-# ============================================================
-# DATOS — nunca subir al repositorio (penalización -1 pt)
-# ============================================================
+# Datos (NO subir al repo — penalización -1pt)
 *.xlsx
 *.xls
 *.csv
-*.zip
+*.db
+*.sqlite
+*.pkl
+*.pickle
 
-# ============================================================
-# MLFLOW — nunca subir mlruns/ (penalización -1 pt)
-# ============================================================
+# MLflow (NO subir — penalización -1pt)
 mlruns/
 mlartifacts/
-*.db
 
-# ============================================================
-# CREDENCIALES — nunca subir (penalización -3 pt)
-# ============================================================
-.env
+# Credenciales (NO subir — penalización -3pt)
 *.env
+.env
 secrets.py
-credentials.py
-config.py
+config_private.py
 
-# ============================================================
 # Python
-# ============================================================
 __pycache__/
 *.py[cod]
-*$py.class
-*.so
-*.egg
+*.pyo
+*.pyd
+.Python
 *.egg-info/
 dist/
 build/
-.eggs/
-.Python
-pip-log.txt
-pip-delete-this-directory.txt
+*.egg
 
-# ============================================================
-# Entornos virtuales
-# ============================================================
-venv/
-env/
-.venv/
-.env/
-ENV/
-Pipfile.lock
-
-# ============================================================
-# Jupyter Notebooks — checkpoints y outputs grandes
-# ============================================================
+# Jupyter
 .ipynb_checkpoints/
-*/.ipynb_checkpoints/
+*.ipynb~
 
-# ============================================================
-# IDEs y editores
-# ============================================================
+# VS Code / IDE
 .vscode/
 .idea/
 *.swp
 *.swo
-*~
+
+# OS
 .DS_Store
 Thumbs.db
-__MACOSX/
+desktop.ini
 
-# ============================================================
-# Logs y archivos temporales
-# ============================================================
-*.log
+# Temporales
 *.tmp
-*.bak
-logs/
-temp/
-
-# ============================================================
-# Power BI — solo subir el .pbix, no los archivos de caché
-# ============================================================
-*.pbit
-Microsoft Power BI Desktop/
+*.log
+prediccion_test.png
